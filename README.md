@@ -20,6 +20,7 @@ SECRET_KEY=Секретный_ключ_сайта
 DEBUG=False или True (если необходимо включить режим отладки)
 DB_ENGINE=Движок вашей базы данных
 DATABASE_URL=Данные в формате URL, например: 'postgres://USER:PASSWORD@HOST:PORT/NAME'
+ALLOWED_HOSTS=Добавить свои хосты (если сайт нужно развернуть локально, то достаточно 'localhost' или '*')
 ```
 `DATABASE_URL` может отличаться от показанного в примере для различных движков, подробнее о составлении url для конкретно
 вашей БД можно узнать в документации к [DJ-Database-URL](https://github.com/jazzband/dj-database-url#url-schema)
