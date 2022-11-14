@@ -16,11 +16,13 @@ pip install -r requirements.txt
 
 Необходимо подключиться к базе данных банка, для этого понадобится заполнить данные в `.env` файле:
 ```commandline
-'DB_PASSWORD'=Пароль_от_базы_данных
-'DB_HOST'=Адрес_базы_данных
-'SECRET_KEY'=Секретный_ключ_сайта
-'DEBUG'=False или True (если необходимо включить режим отладки)
+SECRET_KEY=Секретный_ключ_сайта
+DEBUG=False или True (если необходимо включить режим отладки)
+DB_ENGINE=Движок вашей базы данных
+DATABASE_URL=Данные в формате URL, например: 'postgres://USER:PASSWORD@HOST:PORT/NAME'
 ```
+`DATABASE_URL` может отличаться от показанного в примере для различных движков, подробнее о составлении url для конкретно
+вашей БД можно узнать в документации к [DJ-Database-URL](https://github.com/jazzband/dj-database-url#url-schema)
 
 Для запуска сервера:
 ```commandline
